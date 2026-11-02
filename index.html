@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Izma Supply Co. | Izma Mehveen’s portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf1f3;--ink:#2b1a2e;--muted:#6d5870;--pink:#e4569a;--teal:#1f8a7d;--yel:#f2b632;--plum:#46345c;--lav:#8f67b7;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1e1420;--ink:#fbe9f0;--muted:#c4a9bf;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1e1420;--ink:#fbe9f0;--muted:#c4a9bf;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.1rem/1.6 Outfit,system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:#1a0f1c}
+h1,h2,h3{font-family:"League Spartan",Impact,sans-serif;font-weight:800;text-transform:uppercase;line-height:.98;margin:0;letter-spacing:.01em}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--yel);outline-offset:3px}
+p{max-width:44ch;margin:.7rem 0}.vh{position:absolute;left:-9999px}
+.top{position:fixed;top:0;left:0;right:0;z-index:35;padding:env(safe-area-inset-top,0px) 1rem 0;display:flex;gap:.2rem;justify-content:center;background:#1a0f1ccc;backdrop-filter:blur(6px)}
+.top a{font:800 .85rem "League Spartan";text-transform:uppercase;text-decoration:none;color:#fff;padding:.7rem 1rem;letter-spacing:.06em}.top a:hover{color:var(--yel)}
+/* hero */
+#hero{height:190vh;position:relative}.stg{position:sticky;top:0;height:100svh;overflow:hidden;background:#000}
+.cv{position:absolute;left:50%;top:50%;translate:-50% -50%;width:max(100vw,calc(100svh*1.7769));aspect-ratio:1672/941;will-change:transform}
+.cv img{width:100%;height:100%;display:block}#st{z-index:2;pointer-events:none}#sg{z-index:1}
+.hs{position:absolute;border-radius:.6rem;transition:.25s;pointer-events:none}.on .hs{pointer-events:auto}
+.hs:hover,.hs:focus-visible{box-shadow:0 0 0 4px #fff,0 0 40px 10px var(--yel);background:#fff3;translate:10px 0;rotate:-.6deg}
+.cue{position:absolute;z-index:5;left:0;right:0;bottom:1.6rem;text-align:center;color:#fff;font:800 1rem "League Spartan";letter-spacing:.14em;text-transform:uppercase;text-shadow:0 2px 10px #000;transition:opacity .4s}
+.intro{position:absolute;z-index:5;left:3vw;bottom:3vh;max-width:24rem;background:#fffaf0;color:#2b1a2e;border:4px solid #2b1a2e;padding:1rem 1.2rem;rotate:-1.5deg;box-shadow:6px 6px 0 var(--pink);opacity:0;transition:.5s;translate:0 30px}
+.intro p{margin:0}.intro.on{opacity:1;translate:0 0}
+/* scenes */
+.scene{position:relative;min-height:100svh}.whole{display:grid;place-items:center;min-height:100svh;padding-top:2.6rem}
+.whole img{width:100%;max-height:calc(100svh - 2.6rem);object-fit:contain;display:block}
+.wsc{background:#1a0f1c;min-height:100svh;display:grid;place-items:center;padding-top:2.6rem}
+.cw{position:relative;width:min(100vw,calc((100svh - 2.6rem)*1.5988))}.cw>img{width:100%;display:block}
+.pf{position:absolute;padding:0;border:0;background:none;cursor:pointer;transition:.3s;box-shadow:0 8px 20px #0006}.pf img{width:100%;height:100%;object-fit:cover;display:block}
+.pf::after{content:"";position:absolute;inset:0;background:linear-gradient(#fff3,#0002)}
+.pf:hover,.pf:focus-visible{transform:translateY(-4%) scale(1.08);z-index:3;box-shadow:0 0 0 3px var(--yel),0 18px 40px #000a}
+.mt{position:absolute;padding:0;border:0;background:none;cursor:pointer}
+.nx{position:absolute;right:2rem;bottom:1.5rem;z-index:6;background:var(--yel);color:#2b1a2e;border:3px solid #2b1a2e;font:800 1rem "League Spartan";text-transform:uppercase;text-decoration:none;padding:.7rem 1.2rem;box-shadow:5px 5px 0 #2b1a2e;transition:.2s}.nx:hover{translate:-3px -3px;box-shadow:8px 8px 0 #2b1a2e}
+.step{display:grid;grid-template-columns:minmax(17rem,30vw) 1fr;min-height:100svh;background:var(--c)}
+.step>div:first-child{padding:6rem 2rem 2rem;color:#2b1a2e;align-self:center}.step h2{font-size:clamp(2.6rem,5.5vw,5.5rem)}.step h2 small{display:block;font:600 1rem Outfit;letter-spacing:.2em;margin-bottom:.8rem}
+.tri{display:flex;align-items:center;justify-content:center;gap:1.6rem;padding:4.5rem 2rem 2rem}.tri img{flex:none;height:min(82svh,44vw);aspect-ratio:3/4;object-fit:cover;border:4px solid #2b1a2e;box-shadow:10px 10px 0 #2b1a2e;opacity:0;translate:0 10%;transition:1s cubic-bezier(.2,.9,.3,1)}.tri img:nth-child(3){display:none}.tri img[alt="Side view of the phone"]{display:none}.tri img[alt="The phone held up"]{display:block}
+.tri.in img{opacity:1;translate:0}.tri.in img:nth-child(2){transition-delay:.2s}.tri.in img:nth-child(3){transition-delay:.4s}
+/* ez */
+.ez0{background:radial-gradient(circle at 80% 20%,#8f67b755,transparent 55%),var(--plum);color:#fff;display:grid;align-content:center;padding:6rem 6vw 4rem}
+.ez0 img{width:clamp(8rem,16vw,15rem);margin-bottom:1.5rem}.ez0 h2{font-size:clamp(3.4rem,11vw,10rem)}.ez0 p{font-size:1.4rem;max-width:34ch}
+.tags{display:flex;gap:.6rem;list-style:none;padding:0;margin:1rem 0 0}.tags li{border:2px solid #fff;padding:.2rem .9rem;font-weight:600}
+.prob{display:grid;align-content:center;padding:6rem 6vw 4rem;background:var(--bg)}.prob h2{font-size:clamp(2.4rem,7vw,7rem);max-width:15ch}.prob h2 em{font-style:normal;color:var(--pink)}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0;margin:2rem 0 0;counter-reset:s}
+.chips li{counter-increment:s;background:var(--plum);color:#fff;padding:.7rem 1.3rem;font:800 1.2rem "League Spartan";text-transform:uppercase;opacity:0;scale:.5}.chips li::before{content:counter(s) ". "}
+.chips.in li{animation:pop .5s cubic-bezier(.3,1.8,.5,1) forwards;animation-delay:calc(var(--i)*.35s)}@keyframes pop{to{opacity:1;scale:1}}
+.its{display:grid;grid-template-columns:repeat(3,1fr);min-height:100svh}.its>div{padding:5.5rem 1.6rem 2rem;display:flex;flex-direction:column;gap:1rem;background:var(--c);color:#2b1a2e}
+.its img{width:100%;flex:1;min-height:0;object-fit:contain;background:#fff;max-height:62svh;border:3px solid #2b1a2e}.its h3{font-size:2rem}.its p{margin:.2rem 0}
+.sys{display:grid;grid-template-columns:1fr 1.5fr;min-height:100svh;background:#d9c9ec;color:#2b1a2e}.sys>div:first-child{padding:6rem 2rem 2rem;display:flex;flex-direction:column;gap:1rem}
+.sys img{border:3px solid #2b1a2e}.sys .sk{flex:1;min-height:0;object-fit:contain;background:#fff;max-height:60svh}.sys h2{font-size:clamp(2rem,4vw,4rem)}
+.scr{display:grid;gap:1rem;align-content:center;padding:5.5rem 2rem 2rem}.scr img{width:100%}
+.det{position:relative;min-height:100svh;background:var(--plum);color:#fff;display:grid;grid-template-columns:1.5fr 1fr;align-items:center;padding:6rem 4vw 3rem;gap:3vw}
+.det .stk{position:relative}.det .stk>img:first-child{width:100%;border:3px solid #fff}.det .d1,.det .d2{position:absolute;width:30%;border:2px solid #000;box-shadow:0 10px 30px #0008;transition:.4s}.det .d1{right:4%;top:20%;rotate:3deg}.det .d2{left:6%;bottom:-6%;rotate:-3deg}
+.det .stk:hover .d1{translate:12px -8px}.det .stk:hover .d2{translate:-10px 8px}
+.det aside img{width:100%;background:#fff;max-height:42svh;object-fit:contain;border:3px solid #fff}.det h2{font-size:clamp(2rem,4vw,4rem);margin-bottom:.5rem}
+.fin{min-height:100svh;display:grid;align-content:center;justify-items:center;text-align:center;padding:6rem 4vw 3rem;background:linear-gradient(160deg,#f4c2d6,#c9b3ea);color:#2b1a2e}
+.fin img{width:min(78vw,calc(64svh*1.78));border:4px solid #2b1a2e;box-shadow:12px 12px 0 var(--plum)}.fin h2{font-size:clamp(2rem,4.5vw,4.5rem);margin-bottom:1.5rem}.fin p{max-width:56ch}
+.me{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;background:var(--bg)}.me>div{padding:6rem 5vw 3rem;align-self:center}.me h2{font-size:clamp(2rem,4vw,4rem);margin-bottom:.5rem}
+.tbd{background:#ffe45c;color:#2b1a2e;padding:0 .3rem;font-weight:600}.st3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}.st3 b{display:block;font:800 2.4rem "League Spartan";color:var(--lav)}
+/* checkout */
+.co{min-height:100svh;display:grid;place-items:center;background:var(--pink);padding:6rem 4vw 4rem;position:relative;overflow:hidden}
+.paper{width:min(26rem,92vw);background:#fffaf0;color:#2b1a2e;padding:1.6rem;font:.97rem "Courier New",monospace;border:3px solid #2b1a2e;box-shadow:8px 8px 0 #2b1a2e;clip-path:inset(0 0 100% 0);transition:clip-path 2.8s steps(34)}.paper.in{clip-path:inset(-20px)}
+.paper h2{font-size:1.7rem;text-align:center}.paper ul{list-style:none;margin:1rem 0;padding:1rem 0;border-block:2px dashed #2b1a2e}.paper li{display:flex;justify-content:space-between}.paper p{margin:.3rem 0;max-width:none}.paper img{width:6rem;display:block;margin:.5rem auto}.c{text-align:center}
+/* shutter */
+#ov{position:fixed;inset:0;z-index:100;display:none;place-items:center;color:#fff;background:var(--sc,#e4569a);pointer-events:all}
+#ov::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,#0000 0 22px,#0000002e 22px 26px)}
+#ov span{position:relative;font:800 clamp(2.6rem,10vw,8rem)/.95 "League Spartan";text-transform:uppercase;text-align:center;padding:1rem;text-shadow:6px 6px 0 #0004}
+#ov i{position:absolute;left:50%;bottom:1.5rem;translate:-50%;width:5rem;height:1.1rem;border-radius:1rem;background:#2b1a2e;box-shadow:0 0 0 3px #fff6}
+.lb{position:fixed;inset:0;z-index:90;background:#120a14f2;display:none;grid-template-columns:1.1fr 1fr;align-items:center;gap:3vw;padding:4rem 5vw 2rem;color:#fff}.lb.on{display:grid;animation:fi .3s}@keyframes fi{from{opacity:0}}
+.lb img{max-width:100%;max-height:84svh;justify-self:center;box-shadow:0 20px 60px #000}.lb h2{font-size:clamp(2rem,4vw,4rem)}.lb button{background:var(--yel);color:#2b1a2e;border:3px solid #2b1a2e;font:800 1rem "League Spartan";text-transform:uppercase;padding:.6rem 1.1rem;cursor:pointer;margin:.5rem .5rem 0 0}
+.toast{position:fixed;left:50%;bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));translate:-50% 220%;background:var(--yel);color:#2b1a2e;border:3px solid #2b1a2e;padding:.6rem 1.2rem;font-weight:600;z-index:120;transition:.4s cubic-bezier(.3,1.6,.5,1)}.toast.on{translate:-50% 0}
+@media (max-width:820px){.step,.sys,.det,.me,.lb{grid-template-columns:1fr}.its{grid-template-columns:1fr}.tri{flex-wrap:wrap;padding:3rem 1rem}.tri img{height:auto;width:42vw}.top a{padding:.7rem .5rem}.cw{width:100vw}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.tri img,.chips li{opacity:1;translate:none;scale:1}.paper{clip-path:none}.cue{display:none}}
+</style></head><body>
+<div id="ov" aria-hidden="true"><span id="ovt"></span><i></i></div><div class="toast" id="toast" role="status"></div>
+<nav class="top" aria-label="Aisles"><a href="#visual">Visual</a><a href="#product">Product</a><a href="#checkout">Checkout: Ez Billing</a></nav>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Poster"><img id="lbi" alt=""><div><h2 id="lbt"></h2><p id="lbp"></p><button id="lbp1">← Prev</button><button id="lbn">Next →</button><button id="lbx">Close</button></div></div>
+
+<header id="hero"><div class="stg" id="stg">
+<div class="cv" id="sg"><img src="images/sign.jpg" alt="Store directory sign: Visual Communication, Product, Digital and UX, Experiments, Checkout">
+<a class="hs" href="#visual" style="left:27.5%;top:26.5%;width:41%;height:14%"><span class="vh">Visual Communication</span></a>
+<a class="hs" href="#product" style="left:28.5%;top:40.8%;width:40.5%;height:14.2%"><span class="vh">Product / Physical</span></a>
+<a class="hs" href="#checkout" style="left:28.5%;top:55.3%;width:40.5%;height:13.2%"><span class="vh">Digital / UX</span></a>
+<a class="hs" href="#checkout" style="left:29%;top:83%;width:41%;height:14.2%"><span class="vh">Checkout, Ez Billing</span></a></div>
+<div class="cv" id="st"><img src="images/hero.jpg" alt="The Izma Supply Co. storefront with a pink awning"></div>
+<h1 class="vh">Izma Supply Co.</h1><p class="cue" id="cue">Scroll to walk in</p>
+<div class="intro" id="intro"><p>I’m Izma Mehveen. I design posters, products and software that’s easier to use. Tap a sign to step into an aisle.</p></div>
+</div></header>
+
+<main>
+<section id="visual" data-title="Visual Communication" data-c="#1f8a7d"><div class="wsc"><div class="cw"><img src="images/window.jpg" alt="The Visual Communication window with eight poster frames">
+<button class="pf" data-i="0" style="left:21.1%;top:22.9%;width:12.8%;height:25.9%" aria-label="Open Bug Hunting poster"><img src="images/bug.jpg" alt=""></button>
+<button class="pf" data-i="1" style="left:36.7%;top:22.9%;width:13%;height:25.9%" aria-label="Open Reboot your mind poster"><img src="images/reboot.jpg" alt=""></button>
+<button class="pf" data-i="2" style="left:52%;top:22.9%;width:13.2%;height:25.9%" aria-label="Open Creative Minds poster"><img src="images/creative.jpg" alt=""></button>
+<button class="pf" data-i="3" style="left:68.1%;top:22.9%;width:13.2%;height:25.9%" aria-label="Open magazine cover"><img src="images/mag.jpg" alt=""></button>
+<button class="mt" data-more style="left:21%;top:55%;width:60.5%;height:27%" aria-label="Empty frames"></button>
+</div><a class="nx" href="#product">Next aisle: Product →</a></div></section>
+
+<section id="product" data-title="Product / Physical" data-c="#e4569a">
+<div class="whole" style="background:#b8c1ae"><img src="images/a_brick.jpg" alt="Aisle slide: Brick phone for sale, with the materials list"></div>
+<div class="step" style="--c:#f2d9b0"><div><h2><small>Step one</small>Form</h2><p>The brief was a brick cell phone. I sketched the outline on paper, then cut the body out of cardboard as one flat piece to test the form.</p></div><div class="tri"><img src="images/f1.jpg" alt="Sketch of the phone outline"><img src="images/f2.jpg" alt="The cut cardboard body"><img src="images/f3.jpg" alt="The flat form on a cutting mat"></div></div>
+<div class="step" style="--c:#cfe3d2"><div><h2><small>Step two</small>Keypad</h2><p>The buttons were cut separately, numbered, glued and pressed on to the body one by one.</p></div><div class="tri"><img src="images/k1.jpg" alt="Cut keypad buttons"><img src="images/k2.jpg" alt="Gluing a button"><img src="images/k3.jpg" alt="Placing buttons on the body"></div></div>
+<div class="step" style="--c:#f4c2d6"><div><h2><small>Step three</small>Antenna</h2><p>A slot lets the antenna slide in and stay put, so there is no glue and it can be taken out again.</p></div><div class="tri"><img src="images/n1.jpg" alt="The antenna piece"><img src="images/n2.jpg" alt="Inserting the antenna"><img src="images/n3.jpg" alt="The antenna in its slot"></div></div>
+<div class="step" style="--c:#c9d4f2"><div><h2><small>The result</small>Final phone</h2><p><span class="tbd">Add one line on why you made it.</span></p><a class="nx" style="position:static;display:inline-block;margin-top:1rem" href="#checkout">Next aisle: Checkout →</a></div><div class="tri"><img src="images/d1.jpg" alt="The finished brick phone"><img src="images/d2.jpg" alt="Side view of the phone"><img src="images/d3.jpg" alt="The phone held up"></div></div>
+</section>
+
+<section id="checkout" data-title="Checkout: Ez Billing" data-c="#e4569a">
+<div class="whole" style="background:#726f50"><img src="images/a_ez.jpg" alt="Aisle slide: Ez Billing, a retail billing and inventory system"></div>
+<div class="scene ez0"><img src="images/logo.jpg" alt="Ez Billing logo"><h2>Ez<br>Billing</h2><p>Billing software that doesn’t wear out the person using it. A full retail billing and inventory system, built with two other students.</p><ul class="tags"><li>Python</li><li>Tkinter</li><li>MySQL</li></ul></div>
+<div class="scene prob"><h2>Generic billing tires out <em>the people who use it all day.</em></h2><p>Cluttered screens slow cashiers down and cause mistakes at the counter. My goal was to cut the clutter and shorten the path of a sale to four steps.</p>
+<ol class="chips" id="chips"><li style="--i:0">Search product</li><li style="--i:1">Set quantity</li><li style="--i:2">Apply coupon</li><li style="--i:3">Finalize sale</li></ol></div>
+<div class="its">
+<div style="--c:#f4c2d6"><h3>Try one: a list</h3><img src="images/it1.jpg" alt="Sketch: a vertical list of navigation"><p><b>Problem:</b> too much scrolling for the tasks done most.</p><p><b>Fix:</b> a fixed layout that never scrolls mid-sale.</p></div>
+<div style="--c:#cfe3d2"><h3>Try two: everything</h3><img src="images/it2.jpg" alt="Sketch: every sub-category shown"><p><b>Problem:</b> too many buttons at once overloaded people.</p><p><b>Fix:</b> only the 5 core actions up front, the rest in sub-menus.</p></div>
+<div style="--c:#f2d9b0"><h3>Try three: search only</h3><img src="images/it3.jpg" alt="Sketch: a search bar at the centre"><p><b>Problem:</b> clean, but typing for every item is slow.</p><p><b>Fix:</b> big touch targets, so you tap instead of type.</p></div></div>
+<div class="sys"><div><h2>From sketch to system</h2><img class="sk" src="images/sk1.jpg" alt="Hand sketch of the dashboard and new bill screens"><p>Wireframes first, then the same layout built as real screens.</p></div><div class="scr"><img src="images/dash.jpg" alt="The built dashboard"><img src="images/bill.jpg" alt="The built new bill screen"></div></div>
+<div class="det"><div class="stk"><img src="images/cust.jpg" alt="The customers screen"><img class="d1" src="images/dlg1.png" alt="Dialog: customer removed"><img class="d2" src="images/dlg2.png" alt="Dialog: confirm delete"></div><aside><h2>Built for mistakes</h2><p>Anything destructive asks first. Records for customers, products and employees sit in one system, with a three-column entry layout that cuts scanning time.</p><img src="images/sk2.jpg" alt="Sketch of the customers screen and delete pop-up"></aside></div>
+<div class="fin"><h2>It works, end to end</h2><img src="images/home.jpg" alt="The Ez Billing home screen"><p>The Tkinter front end talks to a MySQL back end, so what you see is a working system, not a mock-up. The biggest lesson: good structure behind the screen is what makes the screen feel simple.</p></div>
+<div class="me"><div><h2>My part</h2><p>In a team of three, I designed the interface and user flow, wrote the MySQL database layer, and connected the Tkinter front end to it.</p></div>
+<div><h2>Testing</h2><p><span class="tbd">DUMMY VALUES: replace with real results before sharing.</span></p><div class="st3"><div><b><span class="tbd">4/5</span></b>finished unaided</div><div><b><span class="tbd">52 s</span></b>per bill</div><div><b><span class="tbd">1.2</span></b>wrong clicks</div></div></div></div>
+<div class="co"><article class="paper" id="rc"><h2>Izma Supply Co.</h2><p class="c">Skill receipt</p><ul>
+<li><span>Python</span><span>x1</span></li><li><span>MySQL / SQL</span><span>x1</span></li><li><span>UI design</span><span>x1</span></li><li><span>UX / info architecture</span><span>x1</span></li><li><span>Functional flow mapping</span><span>x1</span></li><li><span>Front-end build</span><span>x1</span></li><li><span>Database integration</span><span>x1</span></li><li><span>Problem solving</span><span>x1</span></li><li><span>Team collaboration</span><span>x1</span></li></ul>
+<img src="images/qr.jpg" alt="QR code"><p class="c"><a href="https://github.com/izmamehveen/ezbilling">github.com/izmamehveen/ezbilling</a></p><p class="c"><a href="mailto:you@example.com">you@example.com</a></p><p class="c">Thank you for shopping at Izma Supply Co.</p></article></div></section>
+</main>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,$=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const hero=$('#hero'),st=$('#st'),sg=$('#sg'),cue=$('#cue'),intro=$('#intro');
+function frame(){const r=hero.getBoundingClientRect(),p=reduce?1:Math.min(1,Math.max(0,-r.top/(hero.offsetHeight-innerHeight)));
+ st.style.transform=`scale(${1+p*.18})`;st.style.opacity=p<.12?1:Math.max(0,1-(p-.12)/.3);
+ sg.style.transform=`scale(${1.06-Math.min(1,p/.45)*.06})`;sg.classList.toggle('on',p>.55);intro.classList.toggle('on',p>.6);cue.style.opacity=p<.05?1:0}
+addEventListener('scroll',()=>requestAnimationFrame(frame),{passive:true});addEventListener('resize',frame);frame();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.3});
+$$('.tri,#chips,#rc').forEach(e=>io.observe(e));
+/* shutter */
+const ov=$('#ov'),ovt=$('#ovt'),toast=$('#toast');let busy=false;
+function say(t){toast.textContent=t;toast.classList.add('on');setTimeout(()=>toast.classList.remove('on'),2400)}
+async function go(id){const el=document.getElementById(id);if(!el||busy)return;
+ const jump=()=>{if(id==='experiments')return;el.scrollIntoView({behavior:'instant',block:'start'});history.replaceState(null,'','#'+id)};
+ if(reduce){jump();return}
+ busy=true;ov.style.setProperty('--sc',el.dataset.c||'#e4569a');ovt.textContent=el.dataset.title||'';ov.style.display='grid';
+ await ov.animate([{transform:'translateY(-100%)'},{transform:'none',offset:.62,easing:'ease-out'},{transform:'translateY(-3.5%)',offset:.8,easing:'ease-in'},{transform:'none'}],{duration:760,easing:'cubic-bezier(.55,0,.9,.6)',fill:'forwards'}).finished;
+ jump();
+ await ov.animate([{transform:'none'},{transform:'translateY(-100%)'}],{duration:640,delay:420,easing:'cubic-bezier(.6,0,.9,.5)',fill:'forwards'}).finished;
+ ov.getAnimations().forEach(a=>a.cancel());ov.style.display='none';busy=false}
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.closest('.lb'))return;const id=a.getAttribute('href').slice(1);if(!id)return;e.preventDefault();
+ if(a.hasAttribute('data-soon')){say('Experiments: restocking soon');return}go(id)});
+if(location.hash&&document.getElementById(location.hash.slice(1)))setTimeout(()=>document.getElementById(location.hash.slice(1)).scrollIntoView(),60);
+/* posters */
+const P=[{t:'Bug Hunting',s:'',d:'A retro-computing poster for a bug hunting competition. Pixel lettering, pop-up error windows and a ladybug under a magnifying glass make a coding contest look like a game.'},
+{t:'Reboot your mind',s:'',d:'A collage poster made with a teammate for an interschool contest. Floating retro objects on rippling water, built around the idea of pausing and starting again.'},
+{t:'Creative Minds',s:'',d:'An invitation to send work to our school magazine, The Pageturner. Soft clouds and paint tell people why to join and what they can submit.'},
+{t:'The Page Turner cover',s:'',d:'A clean, formal cover for the 2024-25 issue of the school magazine. It was shortlisted for final use.'}];
+P.forEach((p,i)=>p.s=$$('.pf img')[i].src);const lb=$('#lb');let cur=0;function show(i){cur=(i+P.length)%P.length;$('#lbi').src=P[cur].s;$('#lbi').alt=P[cur].t;$('#lbt').textContent=P[cur].t;$('#lbp').textContent=P[cur].d}
+$$('.pf').forEach(b=>b.addEventListener('click',()=>{show(+b.dataset.i);lb.classList.add('on');$('#lbx').focus()}));
+$('#lbp1').onclick=()=>show(cur-1);$('#lbn').onclick=()=>show(cur+1);$('#lbx').onclick=()=>lb.classList.remove('on');
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('on')});
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1)});
+$('[data-more]').onclick=()=>say('More posters coming soon');
+</script></body></html>

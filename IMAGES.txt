@@ -1,0 +1,36 @@
+HOW TO SWAP AN IMAGE
+1. Make your new image the same shape (brick phone photos are 3:4 portrait; screens are wide).
+2. Name it EXACTLY like the old one and replace the file inside the images folder.
+3. On GitHub: open the images folder, Add file > Upload files, drop the new one in, and commit.
+
+FILE -> WHERE IT SHOWS
+hero.jpg  ->  Storefront (first screen)
+sign.jpg  ->  Store directory signboard
+window.jpg  ->  Visual Communication window (empty frames)
+bug.jpg  ->  Poster: Bug Hunting
+reboot.jpg  ->  Poster: Reboot your mind
+creative.jpg  ->  Poster: Creative Minds
+mag.jpg  ->  Poster: magazine cover
+a_brick.jpg  ->  Product aisle opening slide
+f1.jpg  ->  Brick phone, Form, left photo
+f2.jpg  ->  Brick phone, Form, right photo
+k1.jpg  ->  Keypad, left photo
+k2.jpg  ->  Keypad, right photo
+n1.jpg  ->  Antenna, left photo
+n2.jpg  ->  Antenna, right photo
+d1.jpg  ->  Final phone, left photo
+d3.jpg  ->  Final phone, right photo
+a_ez.jpg  ->  Checkout (Ez Billing) opening slide
+logo.jpg  ->  Ez Billing logo
+it1.jpg  ->  Iteration 1 sketch
+it2.jpg  ->  Iteration 2 sketch
+it3.jpg  ->  Iteration 3 sketch
+sk1.jpg  ->  Sketch to system: wireframe
+dash.jpg  ->  Ez Billing dashboard screen
+bill.jpg  ->  Ez Billing new bill screen
+cust.jpg  ->  Ez Billing customers screen
+dlg1.png  ->  Dialog: customer removed
+dlg2.png  ->  Dialog: confirm delete
+sk2.jpg  ->  Customers screen sketch
+home.jpg  ->  Ez Billing home screen (big final image)
+qr.jpg  ->  QR code on the receipt
