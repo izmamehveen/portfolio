@@ -34,3 +34,8 @@ dlg2.png  ->  Dialog: confirm delete
 sk2.jpg  ->  Customers screen sketch
 home.jpg  ->  Ez Billing home screen (big final image)
 qr.jpg  ->  QR code on the receipt
+
+NEW: EXPERIMENTS AISLE (Craig the Quake comic)
+comic/page-01.jpg ... page-12.jpg  ->  the comic pages shown in the reader and the strip
+craig-the-quake.pdf  ->  the PDF opened by "Open the PDF" and "Download"
+(Keep the page names and count the same. If you change the number of pages, tell Claude or edit the CA list in index.html.)
