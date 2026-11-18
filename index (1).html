@@ -62,7 +62,7 @@ p{max-width:44ch;margin:.7rem 0}.vh{position:absolute;left:-9999px}
 .tbd{background:#ffe45c;color:#2b1a2e;padding:0 .3rem;font-weight:600}.st3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}.st3 b{display:block;font:800 2.4rem "League Spartan";color:var(--lav)}
 /* checkout */
 .co{min-height:100svh;display:grid;place-items:center;background:var(--pink);padding:6rem 4vw 4rem;position:relative;overflow:hidden}
-.paper{width:min(26rem,92vw);background:#fffaf0;color:#2b1a2e;padding:1.6rem;font:.97rem "Courier New",monospace;border:3px solid #2b1a2e;box-shadow:8px 8px 0 #2b1a2e;clip-path:inset(0 0 100% 0);transition:clip-path 2.8s steps(34)}.co.in .paper{clip-path:inset(-20px)}
+.paper{width:min(26rem,92vw);background:#fffaf0;color:#2b1a2e;padding:1.6rem;font:.97rem "Courier New",monospace;border:3px solid #2b1a2e;box-shadow:8px 8px 0 #2b1a2e}.co.in .paper{animation:print 2.6s steps(34) backwards}@keyframes print{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(-20px)}}
 .paper h2{font-size:1.7rem;text-align:center}.paper ul{list-style:none;margin:1rem 0;padding:1rem 0;border-block:2px dashed #2b1a2e}.paper li{display:flex;justify-content:space-between}.paper p{margin:.3rem 0;max-width:none}.paper img{width:6rem;display:block;margin:.5rem auto}.c{text-align:center}
 /* shutter */
 #ov{position:fixed;inset:0;z-index:100;display:none;place-items:center;color:#fff;background:var(--sc,#e4569a);pointer-events:all}
